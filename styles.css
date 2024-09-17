@@ -1,0 +1,136 @@
+/* styles.css */
+
+/* Basic body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form styling */
+#qr-form {
+    margin-bottom: 20px;
+}
+
+/* Select dropdown with animation */
+.select-container {
+    position: relative;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+select:hover {
+    border-color: #007bff;
+}
+
+/* Input and paste button styling */
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#qr-input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#paste-btn {
+    width: 18%;
+    margin-left: 5px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#paste-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Generate button styling */
+.generate-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.generate-btn:hover {
+    background-color: #218838;
+}
+
+/* QR Code Display Box */
+#qr-display {
+    padding: 20px;
+    border: 2px dashed #ccc;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Action Buttons */
+#action-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+/* Download and Copy Link buttons */
+#download-btn, #copy-link-btn {
+    padding: 10px 20px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#download-btn:hover, #copy-link-btn:hover {
+    background-color: #138496;
+}
+
+/* Hide download and copy link buttons by default */
+#download-btn, #copy-link-btn {
+    display: none;
+}

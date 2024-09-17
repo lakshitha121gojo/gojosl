@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+
+        <!-- Input Section -->
+        <div id="qr-form">
+            <div class="select-container">
+                <select id="qr-type">
+                    <option value="text">Text</option>
+                    <option value="url">URL</option>
+                    <option value="email">Email</option>
+                    <option value="location">Location</option>
+                </select>
+            </div>
+            
+            <div class="input-container">
+                <input type="text" id="qr-input" placeholder="Enter value">
+                <button id="paste-btn" onclick="pasteText()">Paste</button>
+            </div>
+            
+            <button class="generate-btn" onclick="generateQRCode()">Generate QR Code</button>
+        </div>
+
+        <!-- QR Code Display Box -->
+        <div id="qr-display">
+            <div id="qr-container"></div>
+        </div>
+
+        <!-- Download and Copy Link Buttons -->
+        <div id="action-buttons">
+            <button id="download-btn" onclick="downloadQRCode()">Download QR</button>
+            <button id="copy-link-btn" onclick="copyLink()">Copy Link</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
